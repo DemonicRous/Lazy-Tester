@@ -1,0 +1,22 @@
+{
+    "manifest_version": 3,
+    "name": "VisualVibe Tweaker",
+    "version": "1.0",
+    "description": "VisualVibe Tweaker - это расширение для браузера, которое делай приятный ре-дизайн сайта",
+    "icons": {
+        "128": "assets/images/icons/128.png"
+    },
+    "content_scripts": [
+        {
+            "matches": ["https://*.niitsuru.com/"],
+            "js": [ "app.js"],
+            "css": [ "assets/css/app.css"]
+        }
+    ],
+    "action": {
+        "default_popup": "tweaker.html",
+        "default_icon": {
+          "128": "assets/images/icons/128.png"
+        }
+    }
+ }
